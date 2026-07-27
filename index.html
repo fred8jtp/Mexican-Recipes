@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mexican Recipes – Regional, Central Valley CA & Street Food</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+    <button class="theme-toggle" id="themeToggle" title="Toggle light/dark mode" aria-label="Toggle theme">🌙</button>
+    <h1>🇲🇽 Mexican Recipes</h1>
+    <p>Regional classics • Central Valley CA (incl. breakfast & menudo) • Street tacos • Appetizers</p>
+  </header>
+  <div class="container">
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search recipes, ingredients, or regions..." />
+    </div>
+    <div class="regions" id="regionFilters">
+      <button class="region-btn active" data-region="all">All</button>
+      <button class="region-btn" data-region="Appetizers">Appetizers</button>
+      <button class="region-btn" data-region="Northern">Northern</button>
+      <button class="region-btn" data-region="Central">Central / Puebla</button>
+      <button class="region-btn" data-region="Western">Western</button>
+      <button class="region-btn" data-region="Oaxaca">Oaxaca</button>
+      <button class="region-btn" data-region="Yucatán">Yucatán</button>
+      <button class="region-btn" data-region="Gulf">Gulf Coast</button>
+      <button class="region-btn" data-region="Central Valley CA">Central Valley CA</button>
+      <button class="region-btn" data-region="Street Food">Street & Truck</button>
+    </div>
+    <div class="recipes-grid" id="recipesGrid"></div>
+  </div>
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <button class="close-btn" id="closeModal">&times;</button>
+        <h2 id="modalTitle"></h2>
+        <div class="modal-region" id="modalRegion"></div>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+  <footer>Expanded Mexican, Central Valley California & street-food recipes • Enjoy!</footer>
+  <script src="app.js"></script>
+</body>
+</html>
